@@ -2,15 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "face_api.py",
+      "src": "api/face_api.py",
       "use": "@vercel/python",
       "config": { "pythonVersion": "3.12" }
     }
   ],
   "routes": [
     {
-      "src": "/(*.*)",
-      "dest": "face_api.py"
+      "src": "/api/face_api",
+      "dest": "api/face_api.py"
     }
   ]
 }
